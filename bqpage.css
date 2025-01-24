@@ -1,0 +1,59 @@
+div.polaroid {
+  display: inline;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  gap: 20px;
+}
+
+div.container {
+  text-align: left;
+  padding-left: 30px;
+}
+#ok{
+    display: flex;
+    gap: 20px;
+}
+img{
+    height: 300px;
+    width: 300px;
+    padding-left: 30px;
+}
+.polaroid{
+    height: 400px;
+    width: 300px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+span{
+    text-decoration: line-through;
+    font-size: 19px;
+    padding: 0%;
+    margin: 0;
+}
+p3{
+    padding: 0%;
+    margin: 0;
+    font-size: 16px;
+}
+p1{
+    padding: 0%;
+    margin: 0;
+    font-size: 25px;
+}
+p{
+    color: rgb(204, 89, 108);
+    font-size: 15px;
+    padding: 0%;
+    margin: 0;
+}
+.polaroid:hover {
+    transform: perspective(1000px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+body{
+    background-color: rgb(247, 195, 204);
+}
