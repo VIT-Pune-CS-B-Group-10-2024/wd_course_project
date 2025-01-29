@@ -3,50 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gift Shop Cart - Bow and Knot</title>
-  <link rel="stylesheet" href="cartpage.css"> <!-- Link to your CSS file -->
+  <title>Shopping Cart - Bow and Knot</title>
+  <link rel="stylesheet" href="cart.css">
 </head>
 <body>
 
-  <!-- Header Section -->
   <div id="header">
-    <div id="logo">
-      <h1>Bow and Knot</h1>
-    </div>
-    <div id="nav">
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#customize">Customize</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+    <h1>Shopping Cart</h1>
+    <a href="index.html">← Continue Shopping</a>
   </div>
 
-  <!-- Cart Section -->
-  <div class="section">
-    <h1>Your Shopping Cart</h1>
-    <table class="cart-table">
-      <thead>
-        <tr>
-          <th>Item</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Total</th>
-          <th>Action</th>
-        </tr>
-      </thead>
-      <tbody id="cart-items">
-        <!-- Cart items will be inserted here by JavaScript -->
-      </tbody>
-    </table>
-    <div class="cart-summary">
-      <p>Total: $<span id="total-price">0.00</span></p>
-      <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
-    </div>
-  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="cart-items"></tbody>
+  </table>
 
-  <script src="cartpage.js"></script> <!-- Link to your JavaScript file -->
+  <h2>Total: $<span id="total-price">0.00</span></h2>
+
+  <button onclick="checkout()">Proceed to Checkout</button>
+
+  <script>
+    function loadCart() {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const cartContainer = document.getElementById("cart-items");
+      cartContainer.innerHTML = "";
+      let totalPrice = 0;
+
+      cart.forEach((item, index) => {
+        let itemTotal = item.price * item.quantity;
+        totalPrice += itemTotal;
+
+        let row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${item.name}</td>
+          <td>$${item.price.toFixed(2)}</td>
+          <td>
+            <input type="number" value="${item.quantity}" min="1" onchange="updateQuantity(${index}, this.value)">
+          </td>
+          <td>$${itemTotal.toFixed(2)}</td>
+          <td><button onclick="removeItem(${index})">Remove</button></td>
+        `;
+        cartContainer.appendChild(row);
+      });
+
+      document.getElementById("total-price").textContent = totalPrice.toFixed(2);
+    }
+
+    function updateQuantity(index, quantity) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      if (quantity < 1) {
+        alert("Quantity must be at least 1.");
+        return;
+      }
+      cart[index].quantity = parseInt(quantity);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      loadCart();
+    }
+
+    function removeItem(index) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      loadCart();
+    }
+
+    function checkout() {
+      alert("Proceeding to checkout...");
+      window.location.href = "checkout.html"; // Redirect to checkout page
+    }
+
+    window.onload = loadCart;
+  </script>
 
 </body>
 </html>
