@@ -3,8 +3,8 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fce0ec; /* Soft pastel pink background */
-  color: #333;
+  background-color: #F6C1D1; /* Light pastel pink background */
+  color: #333333; /* Dark gray text */
 }
 
 /* Header styles */
@@ -12,14 +12,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f9b5d3; /* Light pastel pink */
+  background-color: #D4A1B4; /* Muted pink */
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #logo h1 {
   font-size: 2.5rem;
-  color: #b0007b; /* Darker pink for contrast */
+  color: #9E3D56; /* Dark pink */
   margin: 0;
 }
 
@@ -36,14 +36,14 @@ body {
 
 #nav ul li a {
   text-decoration: none;
-  color: #b0007b; /* Darker pink */
+  color: #9E3D56; /* Dark pink */
   font-weight: bold;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 #nav ul li a:hover {
-  color: #ff66b2; /* Hover color to make it pop */
+  color: #A7D8F0; /* Soft baby blue for hover effect */
 }
 
 /* Hero Section */
@@ -58,7 +58,7 @@ body {
 #hero-content h2 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #ffb6d5; /* Light pink for contrast */
+  color: #F6C1D1; /* Light pastel pink for contrast */
 }
 
 #hero-content p {
@@ -67,8 +67,8 @@ body {
 }
 
 .cta-button {
-  background-color: #ff66b2; /* Bold pastel pink */
-  color: white;
+  background-color: #A7D8F0; /* Soft baby blue */
+  color: #fff;
   padding: 12px 30px;
   font-size: 1.1rem;
   border-radius: 30px;
@@ -77,7 +77,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #ff42e3; /* Darker pink for hover effect */
+  background-color: #9E3D56; /* Dark pink for hover effect */
 }
 
 /* Section styling */
@@ -88,7 +88,7 @@ body {
 
 h2 {
   font-size: 2.5rem;
-  color: #b0007b;
+  color: #9E3D56; /* Dark pink */
   margin-bottom: 20px;
 }
 
@@ -142,7 +142,7 @@ p {
 
 .product-item h3 {
   font-size: 1.8rem;
-  color: #b0007b;
+  color: #9E3D56; /* Dark pink */
 }
 
 .product-item p {
@@ -152,14 +152,14 @@ p {
 
 /* Customize Section */
 #customize {
-  background-color: #f9b5d3; /* Soft pastel pink */
+  background-color: #D4A1B4; /* Muted pink */
   border-radius: 10px;
   padding: 50px 20px;
 }
 
 #customize h2 {
   font-size: 2.5rem;
-  color: #b0007b;
+  color: #9E3D56; /* Dark pink */
 }
 
 #customize p {
@@ -175,18 +175,18 @@ p {
 }
 
 #contact a {
-  color: #ff66b2;
+  color: #A7D8F0; /* Baby blue for links */
   text-decoration: none;
   font-weight: bold;
 }
 
 #contact a:hover {
-  color: #ff42e3;
+  color: #9E3D56; /* Dark pink for hover effect */
 }
 
 /* Footer */
 #footer {
-  background-color: #f9b5d3;
+  background-color: #D4A1B4; /* Muted pink */
   color: #fff;
   text-align: center;
   padding: 15px;
