@@ -1,13 +1,20 @@
-body {
+/* Style for the logo */
+#logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the logo image and text */
+}
+
+#logo img {
+  height: 50px; /* Adjust the logo size */
+  width: auto; /* Maintain aspect ratio */
+}
+
+#logo h1 {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff; /* White background for a clean look */
-  color: #333333; /* Dark gray text for readability */
-  background-image: url(div1_bg.jpeg);
-  object-fit: fill;
-  background-repeat: no-repeat;
-  background-position: 55px 0;
-  background-attachment: fixed;
+  color: #c20664; /* Dark pink logo text */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem; /* Adjust font size of the logo text */
 }
 
 #header {
@@ -16,12 +23,6 @@ body {
   align-items: center;
   background-color: #ffd9ec; /* Light pink for header */
   padding: 10px 20px;
-}
-
-#logo h1 {
-  margin: 0;
-  color: #c20664; /* Dark pink logo text */
-  font-family: 'Times New Roman', Times, serif;
 }
 
 #nav ul {
@@ -55,22 +56,6 @@ body {
   height: 700px;
 }
 
-#hero-content h2 {
-  margin: 0;
-  font-size: 3.2em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#hero-content {
-  position: relative;
-  top: 200px;
-  left: 80px;
-}
-
-#hero-content p {
-  margin: 15px 0;
-}
-
 .cta-button {
   display: inline-block;
   background-color: transparent; /* transparent button */
@@ -102,13 +87,6 @@ body {
   background-color: #ffd9ec; /* Light pink for product section */
 }
 
-#product-list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap; /* Adjust for responsiveness */
-}
-
 .product-item {
   background-color: #c170ff; /* Purple for product cards */
   padding: 20px;
@@ -116,15 +94,6 @@ body {
   width: 250px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-}
-
-.product-item h3 {
-  color: #000000; /* Black headings */
-}
-
-#contact {
-  background-color: #ffffff; /* White for simplicity */
-  color: #333333;
 }
 
 #footer {
@@ -135,66 +104,4 @@ body {
   font-size: 0.9em;
 }
 
-h2 {
-  color: #c20664; /* Dark pink */
-}
-
-p {
-  color: rgb(255, 255, 255);
-  font-size: 1.2rem;
-}
-
-.aboutus-text {
-  color: black;
-  padding: 15px;
-  font-size: 1rem;
-  max-width: 400px;
-  margin: 20px;
-}
-
-.aboutus {
-  text-align: center;
-  max-width: 480px;
-  font-size: 1.8rem;
-  color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-img {
-  display: block;
-  align-items: end;
-  position: relative;
-  scale: 0.8;
-}
-
-#about {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#products h2 {
-  color: #000000;
-}
-
-#products p {
-  color: rgb(137, 55, 69); /* Darker pink for subheadings */
-}
-
-#customize h2 {
-  color: #000000;
-}
-
-#customize p {
-  color: #000000;
-}
-
-#contact p {
-  color: #000000;
-}
-
-#hero-content a {
-  color: white;
-  border: 2px solid white;
-}
 
