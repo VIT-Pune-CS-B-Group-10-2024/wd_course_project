@@ -61,11 +61,11 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
-  #hero-content {
-    position: relative;
-    top: 200px;
-    left: 80px;
-  }
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
   #hero-content p {
     margin: 15px 0;
   }
