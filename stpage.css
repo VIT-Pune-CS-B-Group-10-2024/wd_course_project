@@ -57,3 +57,39 @@ p{
 body{
     background-color: rgb(247, 195, 204);
 }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Soft pink for header */
+    padding: 10px 20px;
+  }
+  
+  #logo h1 {
+    margin: 0;
+    color: #000000; /* Pink logo text for boldness */
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 20px;
+  }
+  
+  #nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  #nav ul li {
+    display: inline;
+  }
+  
+  #nav ul li a {
+    text-decoration: none;
+    color: #000000; /* Black for navigation links */
+    font-weight: bold;
+  }
+  
+  #nav ul li a:hover {
+    color: #ff69b4; /* Bright pink on hover */
+  }
