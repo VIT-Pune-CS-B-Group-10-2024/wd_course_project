@@ -57,3 +57,11 @@ p{
 body{
     background-color: rgb(247, 195, 204);
 }
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
