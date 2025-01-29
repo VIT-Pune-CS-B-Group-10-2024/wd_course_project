@@ -27,9 +27,9 @@
   </table>
 
   <h2>Total: $<span id="total-price">0.00</span></h2>
-
-  <button onclick="checkout()">Proceed to Checkout</button>
-
+  <div class="button">
+    <button onclick="checkout()">Proceed to Checkout</button>
+  </div>
   <script>
     function loadCart() {
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
