@@ -1,231 +1,200 @@
-/* General body and font settings */
 body {
-  font-family: 'Arial', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #F7F7F7; /* Light Gray background */
-  color: #222222; /* Dark Charcoal Black text */
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background for a clean look */
+  color: #333333; /* Dark gray text for readability */
+  background-image: url(div1_bg.jpeg);
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-position: 55px 0;
+  background-attachment: fixed;
 }
 
-/* Header styles */
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #6C91D2; /* Soft Blue */
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffd9ec; /* Light pink for header */
+  padding: 10px 20px;
 }
 
 #logo h1 {
-  font-size: 2.5rem;
-  color: #E4A0B3; /* Muted Pink */
   margin: 0;
+  color: #c20664; /* Dark pink logo text */
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #nav ul {
-  list-style-type: none;
-  padding: 0;
+  list-style: none;
   margin: 0;
+  padding: 0;
   display: flex;
+  gap: 15px;
 }
 
 #nav ul li {
-  margin: 0 20px;
+  display: inline;
 }
 
 #nav ul li a {
   text-decoration: none;
-  color: #E4A0B3; /* Muted Pink */
+  color: #000000; /* Black for navigation links */
   font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
 }
 
 #nav ul li a:hover {
-  color: #D17387; /* Darker Pink for hover effect */
+  color: #fa61ff; /* Light purple on hover */
 }
 
-/* Hero Section */
 #hero-section {
-  background: url('hero-bg.jpg') no-repeat center center;
-  background-size: cover;
-  color: #fff;
-  padding: 100px 20px;
-  text-align: center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.95) 100%);
+  text-align: left;
+  padding: 50px 20px;
+  color: #ffffff; /* White text for contrast */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 700px;
 }
 
 #hero-content h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #E4A0B3; /* Muted Pink for contrast */
+  margin: 0;
+  font-size: 3.2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#hero-content {
+  position: relative;
+  top: 200px;
+  left: 80px;
 }
 
 #hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin: 15px 0;
 }
 
 .cta-button {
-  background-color: #6C91D2; /* Soft Blue */
-  color: #fff;
-  padding: 12px 30px;
-  font-size: 1.1rem;
-  border-radius: 30px;
+  display: inline-block;
+  background-color: transparent; /* transparent button */
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  margin-top: 20px;
+  border: 2px solid #c20664; /* Dark pink border */
 }
 
 .cta-button:hover {
-  background-color: #D17387; /* Dark Pink for hover effect */
+  background-color: #fa61ff; /* Light purple on hover */
+  color: white;
+  border: 2px solid #fa61ff;
 }
 
-/* Section styling */
 .section {
-  padding: 50px 20px;
+  padding: 40px 20px;
   text-align: center;
+  background-color: #f8f8f8; /* White for sections */
+  margin: 0 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: #000000;
 }
 
-h2 {
-  font-size: 2.5rem;
-  color: #E4A0B3; /* Muted Pink */
-  margin-bottom: 20px;
+#products {
+  background-color: #ffd9ec; /* Light pink for product section */
 }
 
-p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #555;
-}
-
-/* About Us Section */
-.aboutustextdiv {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.aboutus-text {
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-}
-
-.aboutusimgdiv img {
-  width: 100%;
-  max-width: 650px;
-  margin-top: 20px;
-  border-radius: 10px;
-}
-
-/* Products Section */
 #product-list {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Adjust for responsiveness */
 }
 
 .product-item {
-  background-color: #fff;
-  padding: 25px;
+  background-color: #c170ff; /* Purple for product cards */
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 .product-item h3 {
-  font-size: 1.8rem;
-  color: #D17387; /* Darker Pink for headings */
+  color: #000000; /* Black headings */
 }
 
-.product-item p {
+#contact {
+  background-color: #ffffff; /* White for simplicity */
+  color: #333333;
+}
+
+#footer {
+  text-align: center;
+  background-color: #000000; /* Black footer */
+  color: #ffffff; /* White text for contrast */
+  padding: 10px 20px;
+  font-size: 0.9em;
+}
+
+h2 {
+  color: #c20664; /* Dark pink */
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+
+.aboutus-text {
+  color: black;
+  padding: 15px;
   font-size: 1rem;
-  color: #777;
+  max-width: 400px;
+  margin: 20px;
 }
 
-/* Customize Section */
-#customize {
-  background-color: #6C91D2; /* Soft Blue */
-  border-radius: 10px;
-  padding: 50px 20px;
+.aboutus {
+  text-align: center;
+  max-width: 480px;
+  font-size: 1.8rem;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+  display: block;
+  align-items: end;
+  position: relative;
+  scale: 0.8;
+}
+
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#products h2 {
+  color: #000000;
+}
+
+#products p {
+  color: rgb(137, 55, 69); /* Darker pink for subheadings */
 }
 
 #customize h2 {
-  font-size: 2.5rem;
-  color: #E4A0B3; /* Muted Pink */
+  color: #000000;
 }
 
 #customize p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
+  color: #000000;
 }
 
-/* Contact Section */
 #contact p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #555;
+  color: #000000;
 }
 
-#contact a {
-  color: #6C91D2; /* Soft Blue for links */
-  text-decoration: none;
-  font-weight: bold;
+#hero-content a {
+  color: white;
+  border: 2px solid white;
 }
 
-#contact a:hover {
-  color: #D17387; /* Dark Pink for hover effect */
-}
-
-/* Footer */
-#footer {
-  background-color: #6C91D2; /* Soft Blue */
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-#footer p {
-  font-size: 1rem;
-  margin: 0;
-  color: #555;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  #header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #nav ul li {
-    margin: 10px 0;
-  }
-
-  #product-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .product-item {
-    width: 90%;
-  }
-}
-
-
-  .product-item {
-    width: 90%;
-  }
-}
