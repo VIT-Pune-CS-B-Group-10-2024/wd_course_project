@@ -63,3 +63,8 @@ button:hover {
     color: red;
     font-size: 0.9em;
 }
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
