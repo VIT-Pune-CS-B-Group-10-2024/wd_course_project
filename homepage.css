@@ -100,10 +100,15 @@ p {
 }
 
 /* About Us Section */
-.aboutus-text {
+.aboutustextdiv {
   max-width: 900px;
   margin: 0 auto;
+}
+
+.aboutus-text {
   font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
 }
 
 .aboutusimgdiv img {
@@ -218,5 +223,6 @@ p {
     width: 90%;
   }
 }
+
 
   
