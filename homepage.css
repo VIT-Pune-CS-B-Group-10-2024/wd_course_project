@@ -3,8 +3,8 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F8C8D8; /* Pastel Pink background */
-  color: #333333; /* Dark gray text */
+  background-color: #F2F2F2; /* Light Gray background */
+  color: #333333; /* Charcoal Black text */
 }
 
 /* Header styles */
@@ -12,14 +12,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #A7D8F0; /* Pastel Blue */
+  background-color: #72C9E0; /* Bright Blue */
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #logo h1 {
   font-size: 2.5rem;
-  color: #D66B8F; /* Darker pink */
+  color: #FF77B1; /* Fresh Pink */
   margin: 0;
 }
 
@@ -36,14 +36,14 @@ body {
 
 #nav ul li a {
   text-decoration: none;
-  color: #D66B8F; /* Darker pink */
+  color: #FF77B1; /* Fresh Pink */
   font-weight: bold;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 #nav ul li a:hover {
-  color: #75A9D1; /* Darker blue for hover effect */
+  color: #E05177; /* Deep Pink for hover effect */
 }
 
 /* Hero Section */
@@ -58,7 +58,7 @@ body {
 #hero-content h2 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #F8C8D8; /* Light pastel pink for contrast */
+  color: #FF77B1; /* Fresh Pink for contrast */
 }
 
 #hero-content p {
@@ -67,7 +67,7 @@ body {
 }
 
 .cta-button {
-  background-color: #A7D8F0; /* Pastel blue */
+  background-color: #72C9E0; /* Bright Blue */
   color: #fff;
   padding: 12px 30px;
   font-size: 1.1rem;
@@ -77,7 +77,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #D66B8F; /* Darker pink for hover effect */
+  background-color: #E05177; /* Deep Pink for hover effect */
 }
 
 /* Section styling */
@@ -88,7 +88,7 @@ body {
 
 h2 {
   font-size: 2.5rem;
-  color: #D66B8F; /* Darker pink */
+  color: #FF77B1; /* Fresh Pink */
   margin-bottom: 20px;
 }
 
@@ -142,7 +142,7 @@ p {
 
 .product-item h3 {
   font-size: 1.8rem;
-  color: #D66B8F; /* Darker pink */
+  color: #E05177; /* Deep Pink */
 }
 
 .product-item p {
@@ -152,14 +152,14 @@ p {
 
 /* Customize Section */
 #customize {
-  background-color: #A7D8F0; /* Pastel Blue */
+  background-color: #72C9E0; /* Bright Blue */
   border-radius: 10px;
   padding: 50px 20px;
 }
 
 #customize h2 {
   font-size: 2.5rem;
-  color: #D66B8F; /* Darker pink */
+  color: #FF77B1; /* Fresh Pink */
 }
 
 #customize p {
@@ -175,18 +175,18 @@ p {
 }
 
 #contact a {
-  color: #75A9D1; /* Darker blue for links */
+  color: #72C9E0; /* Bright Blue for links */
   text-decoration: none;
   font-weight: bold;
 }
 
 #contact a:hover {
-  color: #D66B8F; /* Darker pink for hover effect */
+  color: #E05177; /* Deep Pink for hover effect */
 }
 
 /* Footer */
 #footer {
-  background-color: #A7D8F0; /* Pastel Blue */
+  background-color: #72C9E0; /* Bright Blue */
   color: #fff;
   text-align: center;
   padding: 15px;
