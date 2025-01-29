@@ -164,7 +164,6 @@ body {
     display: block;
     align-items: end;
     position: relative;
-    height: 50px;
   }
 
   #about {
@@ -198,4 +197,12 @@ body {
     border: white solid 2px;
   }
 
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+#logo img{
+    height: 50px;
+}
 
