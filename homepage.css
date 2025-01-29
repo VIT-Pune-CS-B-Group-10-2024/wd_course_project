@@ -4,7 +4,17 @@
   align-items: center;
   gap: 10px; /* Space between the logo image and text */
 }
-
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background for a clean look */
+    color: #333333; /* Dark gray text for readability */
+    background-image: url(div1_bg.jpeg);
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-position: 55px 0;
+    background-attachment: fixed;
+  }
 #logo img {
   height: 50px; /* Adjust the logo size */
   width: auto; /* Maintain aspect ratio */
