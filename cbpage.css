@@ -62,13 +62,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff; /* Soft pink for header */
+    background-color: #ad7f97; 
     padding: 10px 20px;
   }
   
   #logo h1 {
     margin: 0;
-    color: #000000; /* Pink logo text for boldness */
+    color: #000000; 
     font-family:'Times New Roman', Times, serif;
   }
   
@@ -86,7 +86,7 @@ body{
   
   #nav ul li a {
     text-decoration: none;
-    color: #000000; /* Black for navigation links */
+    color: #000000; 
     font-weight: bold;
   }
   
