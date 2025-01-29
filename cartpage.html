@@ -13,14 +13,6 @@
     <a href="index.html">← Continue Shopping</a>
   </div>
 
-  <div id="add-item">
-    <h2>Add a Product</h2>
-    <input type="text" id="product-name" placeholder="Product Name">
-    <input type="number" id="product-price" placeholder="Price" min="0" step="0.01">
-    <input type="number" id="product-quantity" placeholder="Quantity" min="1">
-    <button onclick="addToCart()">Add to Cart</button>
-  </div>
-
   <table>
     <thead>
       <tr>
@@ -38,7 +30,6 @@
   <div class="button">
     <button onclick="checkout()">Proceed to Checkout</button>
   </div>
-  
   <script>
     function loadCart() {
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -86,27 +77,7 @@
 
     function checkout() {
       alert("Proceeding to checkout...");
-      window.location.href = "checkout.html";
-    }
-
-    function addToCart() {
-      let name = document.getElementById("product-name").value;
-      let price = parseFloat(document.getElementById("product-price").value);
-      let quantity = parseInt(document.getElementById("product-quantity").value);
-      
-      if (!name || isNaN(price) || price <= 0 || isNaN(quantity) || quantity < 1) {
-        alert("Please enter valid product details.");
-        return;
-      }
-      
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      cart.push({ name, price, quantity });
-      localStorage.setItem("cart", JSON.stringify(cart));
-      
-      document.getElementById("product-name").value = "";
-      document.getElementById("product-price").value = "";
-      document.getElementById("product-quantity").value = "";
-      loadCart();
+      window.location.href = "checkout.html"; // Redirect to checkout page
     }
 
     window.onload = loadCart;
@@ -114,7 +85,3 @@
 
 </body>
 </html>
-
-  
-
-    
