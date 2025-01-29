@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: ffc9e1; /* Soft pink for header */
+    background-color: #ffc9e1; /* Soft pink for header */
     padding: 10px 20px;
   }
   
