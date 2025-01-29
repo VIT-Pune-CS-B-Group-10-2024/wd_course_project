@@ -1,9 +1,3 @@
-/* Style for the logo */
-#logo {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Space between the logo image and text */
-}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -14,104 +8,194 @@ body {
     background-repeat: no-repeat;
     background-position: 55px 0;
     background-attachment: fixed;
-}
-#logo img {
-  height: 50px; /* Adjust the logo size */
-  width: auto; /* Maintain aspect ratio */
-}
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Soft pink for header */
+    padding: 10px 20px;
+  }
+  
+  #logo h1 {
+    margin: 0;
+    color: #000000; /* Pink logo text for boldness */
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  #nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  #nav ul li {
+    display: inline;
+  }
+  
+  #nav ul li a {
+    text-decoration: none;
+    color: #000000; /* Black for navigation links */
+    font-weight: bold;
+  }
+  
+  #nav ul li a:hover {
+    color: #ff69b4; /* Bright pink on hover */
+  }
+  
+  #hero-section {     
+    background: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.95) 100%);
+    text-align: left;
+    padding: 50px 20px;
+    color: #ffffff; /* White text for contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* for a bit of box shadow*/
+    height: 700px;  
+  }
+  
+  #hero-content h2 {
+    margin: 0;
+    font-size: 3.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  #hero-content {
+    position: relative;
+    top: 200px;
+    left: 80px;
+  }
+  #hero-content p {
+    margin: 15px 0;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ffffff00; /* transparent button */
+    color: #000000; /* White text on button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    border: rgb(0, 0, 0) solid 2px;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff69b4; /* Pink on hover */
+    color: white;
+    border: #ff69b4 solid 2px;
+  }
+  
+  .section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8; /* White for sections */
+    margin: 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #000000;
 
-#logo h1 {
-  margin: 0;
-  color: #c20664; /* Dark pink logo text */
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 2.5rem; /* Adjust font size of the logo text */
-}
+  }
+  
+  #products {
+    background-color: #f8f8f8; /* Light gray for product section */
+  }
+  
+  #product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Adjust for responsiveness */
 
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffd9ec; /* Light pink for header */
-  padding: 10px 20px;
-}
+  }
+  
+  .product-item {
+    background-color: #ffe4e1; /* Light pink for product cards */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  .product-item h3 {
+    color: #000000; /* Black headings */
+  }
+  
+  #contact {
+    background-color: #ffffff; /* White for simplicity */
+    color: #333333;
+  }
+  
+  #footer {
+    text-align: center;
+    background-color: #000000; /* Black footer */
+    color: #ffffff; /* White text for contrast */
+    padding: 10px 20px;
+    font-size: 0.9em;
+    
+  }
+  h2 {
+    color: white;
+  }
 
-#nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 15px;
-}
+  p {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+  }
+  .aboutus-text {
+    color: black;
+    padding: 15px;
+    font-size: 1rem;
+    max-width: 400px;
+    margin: 20px;
+  }
 
-#nav ul li {
-  display: inline;
-}
+  .aboutus {
+    text-align: center;
+    max-width: 480px;
+    font-size: 1.8rem;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 
-#nav ul li a {
-  text-decoration: none;
-  color: #000000; /* Black for navigation links */
-  font-weight: bold;
-}
+  img {
+    display: block;
+    align-items: end;
+    position: relative;
+    scale: 0.8;
+  }
 
-#nav ul li a:hover {
-  color: #fa61ff; /* Light purple on hover */
-}
+  #about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-#hero-section {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.95) 100%);
-  text-align: left;
-  padding: 50px 20px;
-  color: #ffffff; /* White text for contrast */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 700px;
-}
+  #products h2 {
+    color: black;
+  }
 
-.cta-button {
-  display: inline-block;
-  background-color: transparent; /* transparent button */
-  color: #000000;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 20px;
-  border: 2px solid #c20664; /* Dark pink border */
-}
+  #products p {
+    color: rgb(137, 55, 69);
+  }
 
-.cta-button:hover {
-  background-color: #fa61ff; /* Light purple on hover */
-  color: white;
-  border: 2px solid #fa61ff;
-}
+  #customize h2 {
+    color: black;
+  }
 
-.section {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #f8f8f8; /* White for sections */
-  margin: 0 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  color: #000000;
-}
+  #customize p {
+    color: black;
+  }
 
-#products {
-  background-color: #ffd9ec; /* Light pink for product section */
-}
+  #contact p {
+    color: black;
+  }
 
-.product-item {
-  background-color: #c170ff; /* Purple for product cards */
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-}
-
-#footer {
-  text-align: center;
-  background-color: #000000; /* Black footer */
-  color: #ffffff; /* White text for contrast */
-  padding: 10px 20px;
-  font-size: 0.9em;
-}
+  #hero-content a {
+    color: white;
+    border: white solid 2px;
+  }
 
 
