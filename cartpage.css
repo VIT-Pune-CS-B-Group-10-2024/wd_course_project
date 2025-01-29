@@ -5,77 +5,44 @@ body {
   color: #333333; /* Dark gray text for readability */
 }
 
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff; /* Soft pink for header */
-  padding: 10px 20px;
-}
-
-#logo h1 {
-  margin: 0;
-  color: #000000; /* Pink logo text for boldness */
-  font-family:'Times New Roman', Times, serif;
-}
-
-#nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 15px;
-}
-
-#nav ul li {
-  display: inline;
-}
-
-#nav ul li a {
-  text-decoration: none;
-  color: #000000; /* Black for navigation links */
-  font-weight: bold;
-}
-
-#nav ul li a:hover {
-  color: #ff69b4; /* Bright pink on hover */
+h1 {
+  padding-left: 40px;
 }
 
 
-.checkout-btn {
-  display: inline-block;
-  background-color: #ffffff00; /* transparent button */
-  color: #000000; /* White text on button */
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 20px;
-  border: rgb(0, 0, 0) solid 2px;
-}
 
-.checkout-btn:hover {
-  background-color: #ff69b4; /* Pink on hover */
-  color: white;
-  border: #ff69b4 solid 2px;
-}
-
-.section {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #f8f8f8; /* White for sections */
-  margin: 0 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  color: #000000;
-}
 
 button {
-  background-color: #ffffff00; /* transparent button */
-  color: #000000; /* White text on button */
-  text-decoration: none;
+  background-color: #ffe4e1;
   border-radius: 8px;
-  
-  border: rgb(0, 0, 0) solid 2px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #1d1818;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: auto;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
 }
 
 h2 {
@@ -99,4 +66,32 @@ table {
 th, td {
   padding: 10px;
   background-color: #ffe4e1;
+}
+
+a{
+  max-height: 30px;
+  margin-top: 13px;
+  margin-right: 20px;
+}
+
+a:link, a:visited {
+  background-color: #ffe4e1;
+  color: rgb(0, 0, 0);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  background-color: rgb(253, 136, 136);
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
 }
