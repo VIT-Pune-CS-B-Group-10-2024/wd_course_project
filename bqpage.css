@@ -97,3 +97,6 @@ body{
   #nav ul li a:hover {
     color: #ff69b4; /* Bright pink on hover */
   }
+#logo img{
+    height: 50px;
+}
