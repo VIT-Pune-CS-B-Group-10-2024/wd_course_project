@@ -98,4 +98,14 @@ body{
     height: 50px;
     width: 50px;
 }
+.add-to-cart{
+    margin-left: 90px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(230, 139, 152);
+  }
+
+.add-to-cart:hover {
+    background-color: #d1478d; /* Darker pink on hover */
+}
   
