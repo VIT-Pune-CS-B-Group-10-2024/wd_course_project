@@ -30,8 +30,6 @@
             <div>
                 <button type="button" onclick="validateForm()">Submit</button>
             </div>
-            
-            
         </form>
     </div>
 
@@ -39,19 +37,20 @@
         function validateForm() {
             let isValid = true;
 
+            // Clear previous error messages
+            document.getElementById('nameError').innerText = '';
+            document.getElementById('emailError').innerText = '';
+            document.getElementById('phoneError').innerText = '';
 
+            // Validate Name
             const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            
-
-
             if (name === '') {
                 document.getElementById('nameError').innerText = 'Name is required.';
                 isValid = false;
             }
 
-
+            // Validate Email
+            const email = document.getElementById('email').value.trim();
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (email === '') {
                 document.getElementById('emailError').innerText = 'Email is required.';
@@ -61,10 +60,8 @@
                 isValid = false;
             }
 
-
-
-
-
+            // Validate Phone Number
+            const phone = document.getElementById('phone').value.trim();
             const phonePattern = /^[0-9]{10}$/;
             if (phone === '') {
                 document.getElementById('phoneError').innerText = 'Phone number is required.';
@@ -74,8 +71,15 @@
                 isValid = false;
             }
 
-            window.location.href = 'bqpage.html'
+            // If all fields are valid, redirect to the next page
+            if (isValid) {
+                window.location.href = 'bqpage.html';
+            }
         }
+    </script>
+</body>
+
+</html>
     </script>
 </body>
 
