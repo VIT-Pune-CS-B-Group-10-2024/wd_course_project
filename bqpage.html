@@ -1,207 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bow and Knot</title>
-    <html>
-    <link rel="stylesheet" href="cbpage.css">
-<body>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: rgb(247, 195, 204);
-        }
-
-        /* HEADER */
-        #header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #ffc9e1;
-            padding: 10px 20px;
-        }
-
-        #logo h1 {
-            margin: 0;
-            color: #000000;
-            font-family: 'Times New Roman', Times, serif;
-            padding-left: 20px;
-        }
-
-        #nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 15px;
-        }
-
-        #nav ul li {
-            display: inline;
-        }
-
-        #nav ul li a {
-            text-decoration: none;
-            color: #000000;
-            font-weight: bold;
-        }
-
-        #nav ul li a:hover {
-            color: #ff69b4;
-        }
-
-        #logo img {
-            height: 50px;
-            width: 50px;
-        }
-
-        /* PRODUCTS */
-        #ok {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-
-        .polaroid {
-            display: inline-block;
-            width: 300px;
-            height: 400px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-            margin-bottom: 25px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding-bottom: 10px;
-            transition: transform 0.3s;
-        }
-
-        .polaroid:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .polaroid img {
-            height: 290px;
-            width: 290px;
-            padding-left: 9px;
-        }
-
-        .container {
-            text-align: left;
-            padding-left: 30px;
-        }
-
-        .add-to-cart {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            padding: 6px 10px;
-            color: white;
-            background-color: rgb(230, 139, 152);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: 0.3s ease-in-out;
-        }
-
-        .add-to-cart:hover {
-            background-color: #ff1493;
-        }
-
-        /* CART */
-        .cart-container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            border: 1px solid #ddd;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            display: none;
-        }
-
-        .cart-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .cart-item img {
-            width: 50px;
-        }
-
-        button {
-            background: #ff5a5f;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #e04e50;
-        }
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        span{
-          text-decoration: line-through;
-          margin-left: 10px;
-        }
-        p3{
-          font-size: 15px;
-        }
-        p1{
-          font-size:18px
-        }
-
-        #cart-count {
-            text-decoration: none;
-            margin-left: 0;
-        }
-    </style>
-</head>
+<html>
+    <link rel="stylesheet" href="stpage.css">
 <body>
 
-    <!-- HEADER -->
     <div id="header">
-        <div id="logo">
-            <img src="media/Bow & Knot logo.png" alt="Bow and Knot Logo">
-            <h1>Bow and Knot</h1>
-        </div>
-        <div id="nav">
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#customize">Customize</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#" onclick="showCart()">🛒 Cart (<span id="cart-count">0</span>)</a></li>
-            </ul>
-        </div>
+     <div id="logo">
+      <img src="media/Bow & Knot logo.png" alt="Bow and Knot Logo" id="logo-img">
+      <h1>Bow and Knot</h1>
     </div>
-
-    <!-- PRODUCTS SECTION -->
-
+    <div id="nav">
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#customize">Customize</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="cartpage.html">Cart</a></li>
+      </ul>
+    </div>
+  </div>
+    
     <div id="ok">
-        <div class="polaroid">
-            <img src="media/bq1.png" alt="error occured">
-            <div class="container">
-              <a href="#"><p1><b>Golden Sunbeam Bouquet</b></p1><br><p3>A vibrant mix of sunflowers, daisies, bringing warmth and happiness to any occasion.</p3><br><p1><b>&#8377 1699</b></p1><span> &#8377 1799</span></a>
-              <a href="#">
-                <button class="add-to-cart" onclick="addToCart('Golden Sunbeam Bouquet', 1699, 'media/bq1.png')">Add to Cart</button>
-            </a></div>
-          </div>
-          <div class="polaroid">
+    <div class="polaroid">
+      <img src="media/bq1.png" alt="error occured">
+      <div class="container">
+        <a href="#"><b>Golden Sunbeam Bouquet</b><br><p3>A vibrant mix of sunflowers, daisies, bringing warmth and happiness to any occasion.</p3><br><p1><b>&#8377 1699</b></p1><span> &#8377 1799</span></a>
+        <a href="#">
+          <button class="add-to-cart" onclick="addToCart('Golden Sunbeam Bouquet', 1699, 'media/bq1.png')">Add to Cart</button>
+      </a>
+    </div>
+    </div>
+  <div class="polaroid">
             <img src="media/bq2.png" alt="error occured">
             <div class="container">
               <a href="#"><b>Ivory Rose Serenity</b><br><p3>A graceful blend of white roses, dusty pink peonies, and soft greenery, creating a tranquil arrangement.</p3><br><p1><b>&#8377 1999</b></p1><span> &#8377 2099</span></a>
@@ -209,7 +36,8 @@
                 <button class="add-to-cart" onclick="addToCart('Ivory Rose Serenity', 1999, 'media/bq2.png')">Add to Cart</button>
             </a></div>
           </div>
-        <div class="polaroid">
+
+<div class="polaroid">
             <img src="media/bq3.png" alt="error occured">
             <div class="container">
                 <a href="#"><b>Blush & Burgundy Elegance</b><br><p3>A stunning mix of pink and dark pink roses, with accents of white lilies and delicate greenery, creating a bold yet graceful bouquet.</p3><br><p1><b>&#8377 2199</b></p1><span> &#8377 2299</span></a>
@@ -217,14 +45,17 @@
                     <button class="add-to-cart" onclick="addToCart('Blush & Burgundy Elegance', 2199, 'media/bq3.png')">Add to Cart</button>
               </a></div>
           </div>
-          <div class="polaroid">
+
+        
+                <div class="polaroid">
             <img src="media/bq4.png" alt="error occured"><div class="container">
                 <a href="#"><b>Crimson Office Charm</b><br><p3>Elegant red roses paired with fresh greenery, creating a bold yet professional bouquet perfect for any office setting.</p3><br><p1><b>&#8377 1799</b></p1><span> &#8377 1899</span></a>
                 <a href="#">
                     <button class="add-to-cart" onclick="addToCart('Ivory Rose Serenity', 1799, 'media/bq2.png')">Add to Cart</button>
               </a> </div>
-         
-        </div>
+                </div></div>
+        
+    <div id="ok">
         <div class="polaroid">
           <img src="media/bq5.png" alt="error occured">
           <div class="container">
@@ -233,6 +64,7 @@
                 <button class="add-to-cart" onclick="addToCart('Soft Blossom Bliss', 1699, 'media/bq5.png')">Add to Cart</button>
           </a> </div>
         </div>
+
         <div class="polaroid">
           <img src="media/bq6.png" alt="error occured">
           <div class="container">
@@ -241,6 +73,7 @@
                 <button class="add-to-cart" onclick="addToCart('Vivid Harmony Bouquet', 2199, 'media/bq6.png')">Add to Cart</button>
           </a></div>
         </div>
+
         <div class="polaroid">
             <img src="media/bq7.png" alt="error occured">
             <div class="container">
@@ -249,6 +82,7 @@
                     <button class="add-to-cart" onclick="addToCart('Petite Pink Perfection', 1399, 'media/bq7.png')">Add to Cart</button>
               </a></div>
           </div>
+
           <div class="polaroid">
             <img src="media/bq8.png" alt="error occured">
             <div class="container">
@@ -258,6 +92,7 @@
               </a> </div>
           </div>
         </div>
+
         <div id="ok">
             <div class="polaroid">
               <img src="media/bq9.png" alt="error occured">
@@ -267,7 +102,8 @@
                     <button class="add-to-cart" onclick="addToCart('Serene Mist Bouquet', 2099, 'media/bq9.png')">Add to Cart</button>
               </a></div>
             </div>
-            <div class="polaroid">
+
+             <div class="polaroid">
               <img src="media/bq10.png" alt="error occured">
               <div class="container">
                 <a href="#"><b>Golden Glow Bouquet</b><br><p3>A beautiful blend of white daisies, white roses, and soft yellow accents, creating a warm, uplifting arrangement that radiates positivity.</p3><br><p1><b>&#8377 1699</b></p1><span> &#8377 1799</span></a>
@@ -275,7 +111,8 @@
                     <button class="add-to-cart" onclick="addToCart('Golden Glow Bouquet', 1699, 'media/bq10.png')">Add to Cart</button>
               </a> </div>
             </div>
-            <div class="polaroid">
+
+             <div class="polaroid">
                 <img src="media/bq11.png" alt="error occured">
                 <div class="container">
                     <a href="#"><b>Rustic Rose Harmony</b><br><p3>A rich blend of soft pink roses and deep brick red carnations, accented with greenery, creating a warm and earthy arrangement.</p3><br><p1><b>&#8377 1999</b></p1><span> &#8377 2099</span></a>
@@ -283,7 +120,8 @@
                         <button class="add-to-cart" onclick="addToCart('Rustic Rose Harmony', 1999, 'media/bq11.png')">Add to Cart</button>
                   </a> </div>
               </div>
-              <div class="polaroid">
+
+             <div class="polaroid">
                 <img src="media/bq12.png" alt="error occured">
                 <div class="container">
                     <a href="#"><b>Pure Green Elegance</b><br><p3>A crisp arrangement of white lilies, roses, and elegant greenery, creating a fresh and tranquil look that exudes purity and nature.</p3><br><p1><b>&#8377 1799</b></p1><span> &#8377 1899</span></a>
@@ -292,8 +130,8 @@
                   </a> </div>
               </div>
             </div>
-            <div id="ok">
-                <div class="polaroid">
+
+             <div class="polaroid">
                   <img src="media/bq13.png" alt="error occured">
                   <div class="container">
                     <a href="#"><b>Tiny White Wonders</b><br><p3>A delicate arrangement of tiny white baby's breath and miniature white daisies, creating a soft, airy, and charming bouquet.</p3><br><p1><b>&#8377 1399</b></p1><span> &#8377 1499</span></a>
@@ -301,6 +139,7 @@
                       <button class="add-to-cart" onclick="addToCart('Tiny White Wonders', 1399, 'media/bq13.png')">Add to Cart</button>
                   </a> </div>
                 </div>
+
                 <div class="polaroid">
                   <img src="media/bq14.png" alt="error occured">
                   <div class="container">
@@ -309,6 +148,7 @@
                         <button class="add-to-cart" onclick="addToCart('Grand Pink Blossom', 2699, 'media/bq14.png')">Add to Cart</button>
                   </a> </div>
                 </div>
+
                 <div class="polaroid">
                     <img src="media/bq15.png" alt="error occured">
                     <div class="container">
@@ -317,6 +157,7 @@
                             <button class="add-to-cart" onclick="addToCart('Majestic White Blooms', 2399, 'media/bq15.png')">Add to Cart</button>
                       </a></div>
                   </div>
+
                   <div class="polaroid">
                     <img src="media/bq16.png" alt="error occured">
                     <div class="container">
@@ -327,7 +168,8 @@
                   </div>
             </div>
 
-    <!-- CART SECTION -->
+
+            <!-- CART SECTION -->
     <div id="cart" class="cart-container">
         <h2>Your Cart</h2>
         <div id="cart-items"></div>
@@ -398,6 +240,9 @@
 
         updateCartCount();
     </script>
+
+
+
 
 </body>
 </html>
