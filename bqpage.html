@@ -330,6 +330,7 @@
         <div id="cart-items"></div>
         <button onclick="clearCart()">Clear Cart</button>
         <button onclick="hideCart()">Close Cart</button>
+        <button onclick="checkout()">Proceed to Checkout</button>
     </div>
 
     <script>
@@ -394,6 +395,10 @@
         }
 
         updateCartCount();
+        function checkout() {
+      alert("Proceeding to checkout...");
+      window.location.href = "checkout.html"; // Redirect to checkout page
+    }
     </script>
 
 </body>
